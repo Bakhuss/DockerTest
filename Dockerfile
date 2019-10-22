@@ -22,13 +22,11 @@ RUN cd $HOME \
 # Ensure signals are forwarded to the JVM process correctly for graceful shutdown
 ENV LAUNCH_JBOSS_IN_BACKGROUND true
 
-COPY ./Library/ /opt/jboss/Library/
-
 USER jboss
 
 # Expose the ports we're interested in
 EXPOSE 8080
 
 # Set the default command to run on boot
-# This will boot WildFly in the standalone mode and bind to all interface
+# This will boot WildFly in the domain mode and bind to all interface
 CMD ["/opt/jboss/wildfly/bin/domain.sh", "-b", "0.0.0.0"]
