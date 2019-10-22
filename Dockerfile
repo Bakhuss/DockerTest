@@ -1,4 +1,4 @@
-# Use latest jboss/base-jdk:11 image as the base
+# Use latest jboss/base-jdk:8 image as the base
 FROM jboss/base-jdk:8
 
 # Set the WILDFLY_VERSION env variable
@@ -21,6 +21,8 @@ RUN cd $HOME \
 
 # Ensure signals are forwarded to the JVM process correctly for graceful shutdown
 ENV LAUNCH_JBOSS_IN_BACKGROUND true
+
+COPY ./Library/ /opt/jboss/Library/
 
 USER jboss
 

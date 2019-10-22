@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.bakhuss.library.desktop.controller.MainController">
+    <children>
+        <TextField fx:id="tFieldFrom" alignment="CENTER" editable="false" focusTraversable="false"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+        <TextArea fx:id="tAreaMain" editable="false" prefHeight="200.0" prefWidth="200.0" text="Main View"
+                  wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                  AnchorPane.topAnchor="31.0">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </TextArea>
+    </children>
+</AnchorPane>
