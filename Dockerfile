@@ -30,3 +30,4 @@ EXPOSE 8080
 # Set the default command to run on boot
 # This will boot WildFly in the domain mode and bind to all interface
 CMD ["/opt/jboss/wildfly/bin/domain.sh", "-b", "0.0.0.0"]
+
