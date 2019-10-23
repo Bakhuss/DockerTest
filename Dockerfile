@@ -22,6 +22,8 @@ RUN cd $HOME \
 # Ensure signals are forwarded to the JVM process correctly for graceful shutdown
 ENV LAUNCH_JBOSS_IN_BACKGROUND true
 ENV LOG_DIR /home/log
+ENV GRADLE_HOME /home/gradle
+
 
 USER jboss
 
