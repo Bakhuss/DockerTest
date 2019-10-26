@@ -1,5 +1,5 @@
 # Use latest jboss/base-jdk:8 image as the base
-FROM jboss/base-jdk:8
+FROM jboss/base-jdk:11
 
 # Set the WILDFLY_VERSION env variable
 ENV WILDFLY_VERSION 18.0.0.Final
@@ -29,7 +29,6 @@ USER jboss
 
 # Expose the ports we're interested in
 EXPOSE 8080
-EXPOSE 22
 
 # Set the default command to run on boot
 # This will boot WildFly in the domain mode and bind to all interface
